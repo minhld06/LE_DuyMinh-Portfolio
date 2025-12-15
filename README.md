@@ -5,7 +5,7 @@
 - Animations fluides
 - Compatible avec tous appareils
 
-## Technologies utilisées
+## Langages/outils utilisés
 - HTML5
 - CSS
 - JavaScript
