@@ -13,7 +13,7 @@
 
 ## Installation
 Aucune installation nécessaire  
-Ouvrez simplement le fichier `Portfolio.html` dans un navigateur
+Ouvrez directement le fichier `Portfolio.html` dans un navigateur
 
 ## Auteur
 Duy Minh LE
