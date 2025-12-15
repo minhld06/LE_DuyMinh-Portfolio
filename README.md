@@ -3,7 +3,7 @@
 ## Fonctionnalités
 - Design responsive
 - Animations fluides
-- Compatible avec tous machines
+- Compatible avec tous appareils
 
 ## Technologies utilisées
 - HTML5
