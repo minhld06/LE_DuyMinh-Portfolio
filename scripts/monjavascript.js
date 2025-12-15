@@ -8,7 +8,7 @@ contactForm.addEventListener("submit", function (event) {
     contactMsg.textContent = "Merci pour votre message.";
     contactMsg.style.color = "green";
 
-    contactForm.reset();
+    contactForm.reset(); //Réinitialiser le formulaire
 });
 
 //Dark mode
@@ -22,7 +22,7 @@ btnDark.addEventListener("click", function () {
         btnDark.innerHTML = '<i class="bi bi-sun"></i>';
         btnDark.classList.remove("btn-outline-dark");
         btnDark.classList.add("btn-outline-light");
-    } else {
+    }else{
         btnDark.innerHTML = '<i class="bi bi-moon"></i>';
         btnDark.classList.remove("btn-outline-light");
         btnDark.classList.add("btn-outline-dark");

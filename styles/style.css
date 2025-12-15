@@ -44,7 +44,6 @@ body {
     flex-wrap: wrap;      /* permet de passer à la ligne si nécessaire */
     gap: 10px;              /* espace entre les pills */
 }
-
 .skill-pill {
     padding: 6px 14px;
     background-color: #e3b07a;  
@@ -73,7 +72,7 @@ body.dark-mode .card {
     color: #f8f9fa;
 }
 
-/* Input et text area dans dark mode */
+/* Input et text area en dark mode */
 body.dark-mode .form-control,
 body.dark-mode .form-control:focus {
     background-color: #1f2933;
