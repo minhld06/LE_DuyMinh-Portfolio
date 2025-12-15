@@ -1,0 +1,128 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*Padding entre les sections*/
+section {
+    padding: 60px 0;
+}
+
+/*Padding pour Accueil*/
+#accueil {
+    padding-top: 80px;
+}
+
+/*Light mode*/
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/*Nom (Grand)*/
+.hero-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+
+/*Avatar*/
+.avatar {
+    max-width: 250px;
+    border-radius: 50%;
+    border: 4px solid #0d6efd;
+}
+
+/*Titre section*/
+.section-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/*Les skill pills*/
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;      /* permet de passer à la ligne si nécessaire */
+    gap: 10px;              /* espace entre les pills */
+}
+
+.skill-pill {
+    padding: 6px 14px;
+    background-color: #e3b07a;  
+    color: #ffffff;
+    border-radius: 20px;    
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;    /* empêche le texte de se casser sur plusieurs lignes */
+}
+
+
+/*Dark mode*/
+body.dark-mode {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
+/*Navbar en dark mode*/
+body.dark-mode .navbar {
+    background-color: #212529 !important;
+}
+
+/* Card en dark mode */
+body.dark-mode .card {
+    background-color: #1f2933;
+    color: #f8f9fa;
+}
+
+/* Input et text area dans dark mode */
+body.dark-mode .form-control,
+body.dark-mode .form-control:focus {
+    background-color: #1f2933;
+    color: #f8f9fa;
+    border-color: #444;
+}
+
+/*Bouton en dark mode*/
+body.dark-mode .btn-outline-dark {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+/*Competences, contact en dark mode*/
+body.dark-mode .bg-light {
+    background-color: #1e1e1e !important; 
+    color: #f8f9fa;                       
+}
+
+/*À propos en dark mode */
+body.dark-mode .list-group-item {
+    background-color: #1f2933;
+    color: #f8f9fa;
+    border-color: #444;
+}
+
+/*Couleur du link dans contact en dark mode */
+body.dark-mode #contact a {
+    color: #0d99ff;
+}
+
+/*Navbar links en dark mode*/
+body.dark-mode .nav-link {
+    color: #f8f9fa;
+}
+body.dark-mode .nav-link:hover {
+    color: #0d6efd;
+}
+
+/*Menu hamburger en dark mode*/
+body.dark-mode .navbar-toggler {
+    border-color: #ffffff;             
+}
+
+/*Icone hamburger en dark mode*/
+body.dark-mode .navbar-toggler-icon {
+    filter: invert(1);                 
+}
+/*Texte muted dans formation en dark mode*/
+body.dark-mode .text-muted {
+    color: #cbd5e1 !important;
+}
