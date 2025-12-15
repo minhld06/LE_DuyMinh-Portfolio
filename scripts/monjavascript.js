@@ -29,4 +29,24 @@ btnDark.addEventListener("click", function () {
     }
 });
 
+//Fermer le menu burger si on clique n'importe où en dehors du menu
+const navbarCollapseEl = document.getElementById("navbarNav");
+const navbarCollapse = new bootstrap.Collapse(navbarCollapseEl, { toggle: false });
+
+document.addEventListener("click", function (e) {
+    const isMenuOpen = navbarCollapseEl.classList.contains("show");
+    if (!isMenuOpen) return;
+
+    const clickedInsideNavbar = e.target.closest(".navbar");
+    if (!clickedInsideNavbar) {
+        navbarCollapse.hide(); // ferme le menu
+    }
+});
+
+//Fermer le menu burger si on clique sur un lien de navigation
+document.querySelectorAll("#navbarNav .nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+        navbarCollapse.hide();
+    });
+});
 
