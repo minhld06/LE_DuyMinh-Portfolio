@@ -27,6 +27,7 @@ btnDark.addEventListener("click", function () {
         btnDark.classList.remove("btn-outline-light");
         btnDark.classList.add("btn-outline-dark");
     }
+    //LocalStorage pour garder le dark-mode pour l'utilisateur meme en rafraichissant la page
     if(document.body.classList.contains("dark-mode")){
         localStorage.setItem("theme", "dark");
     }else{
@@ -34,8 +35,9 @@ btnDark.addEventListener("click", function () {
     }
 });
 
+//Sauvegarder le theme
 const saveTheme = localStorage.getItem("theme");
-if(saveTheme==="dark"){
+if(saveTheme === "dark"){
     document.body.classList.add("dark-mode");
 }
 
