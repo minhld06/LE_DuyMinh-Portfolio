@@ -27,6 +27,11 @@ btnDark.addEventListener("click", function () {
         btnDark.classList.remove("btn-outline-light");
         btnDark.classList.add("btn-outline-dark");
     }
+    if(document.body.classList.contains("dark-mode")){
+        localStorage.setItem("theme", "dark");
+    }else{
+        localStorage.setItem("theme", "light");
+    }
 });
 
 //Fermer le menu burger si on clique sur un lien de navigation
