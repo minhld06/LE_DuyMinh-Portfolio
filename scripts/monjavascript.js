@@ -34,6 +34,11 @@ btnDark.addEventListener("click", function () {
     }
 });
 
+const saveTheme = localStorage.getItem("theme");
+if(saveTheme==="dark"){
+    document.body.classList.add("dark-mode");
+}
+
 //Fermer le menu burger si on clique sur un lien de navigation
 document.querySelectorAll("#navbarNav .nav-link").forEach(link => {
     link.addEventListener("click", () => {
