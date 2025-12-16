@@ -12,8 +12,8 @@
 - Bootstrap
 
 ## Installation
-Aucune installation nécessaire  
-Ouvrez directement le fichier `Portfolio.html` dans un navigateur
+- Installer puis extraire le fichier .zip
+- Ouvrir Portfolio.html dans un navigateur
 
 ## Auteur
 Duy Minh LE
