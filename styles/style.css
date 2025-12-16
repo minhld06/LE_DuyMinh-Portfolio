@@ -38,13 +38,19 @@ section {
     gap: 10px;              /* espace entre les pills */
 }
 .skill-pill {
-    padding: 6px 14px;
-    background-color: #e3b07a;  
-    color: #ffffff;
-    border-radius: 20px;    
-    font-size: 0.9rem;
-    font-weight: 500;   
-    white-space: nowrap;    /* empêche le texte de se casser sur plusieurs lignes */
+    background-color: #d8a465;   
+    color: #1f2933;              
+    font-weight: 600;            
+    font-size: 1.0rem;      
+    padding: 10px 20px;      
+    border-radius: 30px;     
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;         /*éviter le retour à la ligne dans la pill*/
+}
+.skill-pill i {
+    font-size: 1.36em;  
 }
 
 /*Light mode*/
@@ -133,7 +139,7 @@ body.dark-mode .text-muted {
 
 /*Effet survol pour les skill pills*/
 .skill-pill:hover {
-    background-color: #d39a5c;   /*Rendre un peu plus foncé*/
+    background-color: rgb(226, 139, 45);   /*Rendre un peu plus foncé*/
     transform: translateY(-2px); /*Lever légèrement*/
     transition: 0.2s ease; 
 }
@@ -164,7 +170,3 @@ body.dark-mode .text-muted {
     transform: translateY(-2px);
     transition: 0.2s ease;
 }
-
-
-
-
