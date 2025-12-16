@@ -39,7 +39,7 @@ document.addEventListener("click", function (e) {
 
     const clickedInsideNavbar = e.target.closest(".navbar");
     if (!clickedInsideNavbar) {
-        navbarCollapse.hide(); // ferme le menu
+        navbarCollapse.hide(); // fermer le menu
     }
 });
 

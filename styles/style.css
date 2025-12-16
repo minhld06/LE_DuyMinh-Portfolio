@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /*Pour un défilement fluide lors du clic sur les liens d'ancrage*/
 }
 
 /*Padding entre les sections*/
@@ -10,12 +10,6 @@ section {
 /*Padding pour Accueil*/
 #accueil {
     padding-top: 80px;
-}
-
-/*Light mode*/
-body {
-    background-color: #f8f9fa;
-    color: #212529;
 }
 
 /*Nom (Grand)*/
@@ -54,6 +48,11 @@ body {
     white-space: nowrap;    /* empêche le texte de se casser sur plusieurs lignes */
 }
 
+/*Light mode*/
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+}
 
 /*Dark mode*/
 body.dark-mode {
@@ -74,7 +73,7 @@ body.dark-mode .card {
 
 /* Input et text area en dark mode */
 body.dark-mode .form-control,
-body.dark-mode .form-control:focus {
+body.dark-mode .form-control:focus { /* Inclure l'état focus pour éviter le changement de couleur lors de la sélection */
     background-color: #1f2933;
     color: #f8f9fa;
     border-color: #444;
@@ -108,11 +107,48 @@ body.dark-mode #contact a {
 body.dark-mode .nav-link {
     color: #f8f9fa;
 }
-body.dark-mode .nav-link:hover {
+body.dark-mode .nav-link:hover { /* Effet au survol*/
     color: #0d6efd;
 }
 
-/*Menu hamburger en dark mode*/
+/*Effet survol pour les skill pills*/
+.skill-pill:hover {
+    background-color: #d39a5c;   /*Rendre un peu plus foncé*/
+    transform: translateY(-2px); /*Lever légèrement*/
+    transition: 0.2s ease; 
+}
+
+/*Effet survol pour les cartes projets*/
+#projets .card:hover {
+    transform: translateY(-6px);      /*Lever legerement*/
+    transition: 0.3s ease;
+}
+
+/*Effet survol pour Formation*/
+#formation .card:hover {
+    transform: translateY(-4px);
+    transition: 0.3s ease;
+}
+
+/*Effet survol pour Expériences professionnelles*/
+#experiences .card:hover {
+    transform: translateY(-4px);
+    transition: 0.3s ease;
+}
+
+/*Effet survol pour Mes coordonnées*/
+#contact a {
+    display: inline-block;
+}
+#contact a:hover {
+    color: #0d6efd;
+                  /*Bold*/
+    transform: translateY(-2px);
+    transition: 0.2s ease;
+}
+
+
+/*Border menu hamburger en dark mode*/
 body.dark-mode .navbar-toggler {
     border-color: #ffffff;             
 }
@@ -121,7 +157,9 @@ body.dark-mode .navbar-toggler {
 body.dark-mode .navbar-toggler-icon {
     filter: invert(1);                 
 }
+
 /*Texte muted dans formation en dark mode*/
 body.dark-mode .text-muted {
     color: #cbd5e1 !important;
 }
+
