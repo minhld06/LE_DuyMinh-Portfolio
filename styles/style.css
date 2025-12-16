@@ -111,6 +111,21 @@ body.dark-mode .nav-link:hover { /* Effet au survol*/
     color: #0d6efd;
 }
 
+/*Border menu hamburger en dark mode*/
+body.dark-mode .navbar-toggler {
+    border-color: #ffffff;             
+}
+
+/*Icone hamburger en dark mode*/
+body.dark-mode .navbar-toggler-icon {
+    filter: invert(1);                 
+}
+
+/*Texte muted dans formation en dark mode*/
+body.dark-mode .text-muted {
+    color: #cbd5e1 !important;
+}
+
 /*Effet survol pour Compétences*/
 #competences .card:hover {
     transform: translateY(-4px);
@@ -152,18 +167,5 @@ body.dark-mode .nav-link:hover { /* Effet au survol*/
 }
 
 
-/*Border menu hamburger en dark mode*/
-body.dark-mode .navbar-toggler {
-    border-color: #ffffff;             
-}
 
-/*Icone hamburger en dark mode*/
-body.dark-mode .navbar-toggler-icon {
-    filter: invert(1);                 
-}
-
-/*Texte muted dans formation en dark mode*/
-body.dark-mode .text-muted {
-    color: #cbd5e1 !important;
-}
 
