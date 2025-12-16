@@ -32,9 +32,9 @@ btnDark.addEventListener("click", function () {
 //Fermer le menu burger si on clique sur un lien de navigation
 document.querySelectorAll("#navbarNav .nav-link").forEach(link => {
     link.addEventListener("click", () => {
-        const toggler = document.querySelector(".navbar-toggler");
-        if(toggler){
-            toggler.click()
+        const menu = document.getElementById("navbarNav");
+        if(menu.classList.contains("show")){
+            menu.classList.remove("show")
         }
     });
 });
